@@ -10,7 +10,7 @@ env:
   ECS_SERVICE: atoever-test-spring           # set this to your Amazon ECS service name
   ECS_CLUSTER: autoever-test                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: autoever-family-revision1.json # set this to the path to your Amazon ECS task definition
-  CONTAINER_NAME: autoever-family            # set this to the name of the container in the containerDefinitions section of your task definition
+  CONTAINER_NAME: autoever-test-container            # set this to the name of the container in the containerDefinitions section of your task definition
 
 permissions:
   contents: read
