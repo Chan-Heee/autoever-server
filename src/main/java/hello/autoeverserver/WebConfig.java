@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .allowedOrigins(
                         "http://autoever-front.s3-website.ap-northeast-2.amazonaws.com",
-                        "https://your-ecs-load-balancer-dns-url"
+                        "http://autoever-test-loadBalancer-906777232.ap-northeast-2.elb.amazonaws.com"
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowCredentials(true);
