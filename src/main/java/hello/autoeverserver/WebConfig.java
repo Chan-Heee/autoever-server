@@ -10,7 +10,8 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins(
-                        "http://autoever-test-loadBalancer-906777232.ap-northeast-2.elb.amazonaws.com"
+                        "http://autoever-test-loadBalancer-906777232.ap-northeast-2.elb.amazonaws.com",
+                        "http://autoever-front.s3-website.ap-northeast-2.amazonaws.com"
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowCredentials(true);
